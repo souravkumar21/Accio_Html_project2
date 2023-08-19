@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accio Projects</title>
+    <link rel="stylesheet" type="text/css" href="P2.css">
+  </head>
+
+  <body>
+   
+
+        <div class="header">
+          <a href="#default" class="logo">Library System</a>
+          <div class="header-right">
+            <a class="active" href="#Books">Home</a>
+            <a href="#contact">Register</a>
+           
+            <a href="#about">Contact Us</a>
+            <a href="#about">Logout</a>
+          </div>
+        </div>
+        
+        <!--div style="padding-left:20px">
+          <h1>Responsive Header</h1>
+          <p>Resize the browser window to see the effect.</p>
+          <p>Some content..</p>
+        </div-->
+
+        <div class="book">
+            <h1>Books</h1>
+            <table class="book-table">
+              <thead>
+                <tr>
+                  <th>Book ID</th>
+                  <th>Title</th>
+                  <th>Author</th>
+                  <th>Genre</th>
+                  <th>Availability</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td class="title-cell">
+                    <span class="title">Rich Dad Poor Dad</span>
+                    <div class="nested-table">
+                      <table>
+                        <tr>
+                          <td>Publication Date:</td>
+                          <td>July 2023</td>
+                        </tr>
+                        <tr>
+                          <td>Page Count:</td>
+                          <td>320</td>
+                        </tr>
+                        <tr>
+                          <td>ISBN:</td>
+                          <td>978-1234567890</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                  <td>Robert Kiyosaki</td>
+                  <td>Classic 1</td>
+                  <td>Available</td>
+                </tr>
+                
+                <tr>
+                    <td>2</td>
+                    <td class="title-cell">
+                      <span class="title">Think and Grow Rich</span>
+                      <div class="nested-table">
+                        <table>
+                          <tr>
+                            <td>Publication Date:</td>
+                            <td>July 2023</td>
+                          </tr>
+                          <tr>
+                            <td>Page Count:</td>
+                            <td>320</td>
+                          </tr>
+                          <tr>
+                            <td>ISBN:</td>
+                            <td>978-1234567890</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                    <td>Napoleon Hill</td>
+                    <td>Classic 1</td>
+                    <td>Available</td>
+                  </tr>
+
+                  <tr>
+                    <td>3</td>
+                    <td class="title-cell">
+                      <span class="title">The Psychology of Money</span>
+                      <div class="nested-table">
+                        <table>
+                          <tr>
+                            <td>Publication Date:</td>
+                            <td>July 2023</td>
+                          </tr>
+                          <tr>
+                            <td>Page Count:</td>
+                            <td>320</td>
+                          </tr>
+                          <tr>
+                            <td>ISBN:</td>
+                            <td>978-1234567890</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                    <td>Morgan Housel</td>
+                    <td>Classic 1</td>
+                    <td>Available</td>
+                  </tr>
+
+                  <tr>
+                    <td>4</td>
+                    <td class="title-cell">
+                      <span class="title">The Intelligent Investor</span>
+                      <div class="nested-table">
+                        <table>
+                          <tr>
+                            <td>Publication Date:</td>
+                            <td>July 2023</td>
+                          </tr>
+                          <tr>
+                            <td>Page Count:</td>
+                            <td>320</td>
+                          </tr>
+                          <tr>
+                            <td>ISBN:</td>
+                            <td>978-1234567890</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                    <td>Benjamin Graham</td>
+                    <td>Classic 1</td>
+                    <td>Available</td>
+                  </tr>
+
+                  <tr>
+                    <td>5</td>
+                    <td class="title-cell">
+                      <span class="title"> The Richest Man in Babylon</span>
+                      <div class="nested-table">
+                        <table>
+                          <tr>
+                            <td>Publication Date:</td>
+                            <td>July 2023</td>
+                          </tr>
+                          <tr>
+                            <td>Page Count:</td>
+                            <td>320</td>
+                          </tr>
+                          <tr>
+                            <td>ISBN:</td>
+                            <td>978-1234567890</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </td>
+                    <td>George S. Clason.</td>
+                    <td>Classic 1</td>
+                    <td>Available</td>
+                  </tr>
+
+                <!-- Add more rows here -->
+              </tbody>
+            </table>
+            </div>
+
+            <div class="registration-form">
+                <h1>Regiser</h1>
+                <form>
+                  <label for="first-name">First Name:</label>
+                  <input type="text" id="first-name" name="first-name" required>
+            
+                  <label for="last-name">Last Name:</label>
+                  <input type="text" id="last-name" name="last-name" required>
+            
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+            
+                  <label for="date-of-birth">Date of Birth:</label>
+                  <input type="date" id="date-of-birth" name="date-of-birth" required>
+            
+                  <label for="age">Age:</label>
+                  <input type="number" id="age" name="age" min="5" max="100" required>
+            
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" required>
+            
+                  <label for="confirm-password">Confirm Password:</label>
+                  <input type="password" id="confirm-password" name="confirm-password" required>
+            
+                  <button type="submit">Register</button>
+                </form>
+              </div>
+
+
+
+          </body>
+          </html>
+        
+     
